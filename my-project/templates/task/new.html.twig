@@ -1,0 +1,19 @@
+<html>
+    <body style="display: flex; justify-content: center">
+        <div style="flex-direction: column">
+            {{ form(form) }}
+            {% if task and dueDate %}
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                    </tr>
+                    <tr>
+                        <td>{{ task }}</td>
+                        <td>{{ dueDate }}</td>
+                    </tr>
+                </table>
+            {% endif %}
+        </div>
+    </body>
+</html>

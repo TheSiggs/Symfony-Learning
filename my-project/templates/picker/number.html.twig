@@ -1,0 +1,11 @@
+<html>
+    <body style="display: flex; justify-content: center;">
+        <div style="flex-direction: column">
+            <h3>What's your lucky number?</h3>
+            {{ form(form) }}
+            {% if number or number is same as(0) %}
+                <p>Your lucky number is {{ number }}</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
